@@ -62,7 +62,7 @@ catch(error){
 
 //api to Assign or Change Mentor for particular Student--------------------------------------------
 
-router.put("/editmentor/:studentId/:mentorId", async (req,res)=>{
+router.put("//editmentor:studentId/:mentorId", async (req,res)=>{
     try{
         const student = await Student.findById(req.params.studentId);
     if (student.Mentor) {
